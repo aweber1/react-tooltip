@@ -194,8 +194,7 @@ class ReactTooltip extends Component {
   /**
    * Used in customer event
    */
-  checkStatus (e) {
-    e.stopPropagation()
+  checkStatus (e) {    
     if (this.state.show && e.currentTarget.getAttribute('currentItem') === 'true') {
       this.hideTooltip(e)
     } else {
