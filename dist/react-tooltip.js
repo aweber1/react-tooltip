@@ -270,7 +270,7 @@ var ReactTooltip = function (_Component) {
         e.currentTarget.setAttribute('currentItem', 'true');
         /* when click other place, the tooltip should be removed */
         window.removeEventListener('click', this.bindClickListener);
-        window.addEventListener('click', this.bindClickListener, false);
+        window.addEventListener('click', this.bindClickListener, true);
 
         this.showTooltip(e);
         this.setUntargetItems(e.currentTarget);
